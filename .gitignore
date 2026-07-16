@@ -1,0 +1,75 @@
+# IDE and operating-system files
+.idea/
+.vscode/
+.git-upstream-backup/
+.DS_Store
+Thumbs.db
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+.conda/
+
+# Generated datasets (keep only the small static bus mapping)
+/Data/*
+!/Data/1354bus_mapping.npy
+*.npz
+
+# Trained models, checkpoints, and TensorFlow artifacts
+*.h5
+*.hdf5
+*.keras
+*.ckpt
+*.pb
+checkpoint
+checkpoints/
+saved_model/
+saved_models/
+model_weights/
+weights/
+variables/
+
+# Generated predictions, solver outputs, logs, and experiment results
+artifacts/
+outputs/
+results/
+predictions/
+logs/
+figures/
+*.log
+*.sol
+*.out
+*.csv
+*.xlsx
+*.xls
+
+# Temporary and archive files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# AMPL/commercial-solver distributions and licenses
+ampl/
+knitro/
+gurobi/
+cplex/
+*.lic
+ampl.lic
+amplkey
+amplkey.*
+fingerprint*
+activation*
