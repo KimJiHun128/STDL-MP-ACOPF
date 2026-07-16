@@ -156,6 +156,12 @@ failed_predictions/         inverse-normalized solver initial solutions
 Large datasets, raw solver results, graph archives, predictions, and trained
 weights are research artifacts and should not be committed to Git.
 
+The repository includes only the small static inputs required to reconstruct
+the graph topology: `1354bus_mapping.npy` and the four
+`case*_edgedata.dat` files for the 500-bus and 1354-bus, 8-period and
+24-period configurations. The demand profiles and V/θ solver outputs must be
+generated with `acopf-code` or supplied separately using the layout above.
+
 ## Execution order
 
 The main scripts currently select work through variables near the beginning of

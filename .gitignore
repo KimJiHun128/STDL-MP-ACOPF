@@ -19,9 +19,20 @@ venv/
 env/
 .conda/
 
-# Generated datasets (keep only the small static bus mapping)
-/Data/*
+# Generated datasets (keep only static topology/mapping inputs)
+/Data/**
 !/Data/1354bus_mapping.npy
+!/Data/same proportions/
+!/Data/same proportions/500bus/
+!/Data/same proportions/500bus/8/
+!/Data/same proportions/500bus/8/case500_edgedata.dat
+!/Data/same proportions/500bus/24/
+!/Data/same proportions/500bus/24/case500_edgedata.dat
+!/Data/same proportions/1354bus/
+!/Data/same proportions/1354bus/8/
+!/Data/same proportions/1354bus/8/case1354_edgedata.dat
+!/Data/same proportions/1354bus/24/
+!/Data/same proportions/1354bus/24/case1354_edgedata.dat
 *.npz
 
 # Trained models, checkpoints, and TensorFlow artifacts

@@ -724,7 +724,7 @@ for Prd in nPrd_list:
                 dfNDmd = loadtxt(Demand_fileName, delimiter=',')  # Nodal demand NBus*24-Hours sequences
 
                 # 노드의 M A데이터셋
-                madata = f'{PROJECT_ROOT}/Data/same proportions/500bus/{nPrd}/500_{nPrd}_ma_values_all.txt'
+                madata = f'{PROJECT_ROOT}/Data/same proportions/500bus/{nPrd}/500_{nPrd}_ma_values_failed_all.txt'
                 dfLFlw = loadtxt(madata, delimiter=',')
                 # each graph(sample) must have 24 Nodal values and edge connection(constant, topology does not chage)
                 x_data = dfNDmd
@@ -1462,6 +1462,4 @@ for Prd in nPrd_list:
                 for name, metrics in results.items():
                     print(f"--- {name} Set ---")
                     print(f"Loss: {metrics['Loss']:.5f}, SMAPE: {metrics['SMAPE']:.5f}")
-
-
 
